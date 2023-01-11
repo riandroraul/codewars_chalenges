@@ -54,4 +54,11 @@ const longest = (s1, s2) => {
   // return sorted;
 };
 
-console.log(longest("loopingisfunbutdangerous", "lessdangerousthancoding"));
+// console.log(longest("loopingisfunbutdangerous", "lessdangerousthancoding"));
+
+const sortByLength = (array) => {
+  // return array.filter((word) => word.length > 3);
+  return array.sort((a, b) => a.length - b.length);
+};
+
+// console.log(sortByLength(["Beg", "Life", "I", "To"]));
