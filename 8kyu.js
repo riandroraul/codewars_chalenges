@@ -138,7 +138,9 @@ Assume that beast and dish are always lowercase strings, and that each has at le
 
 function feast(beast, dish) {
   //your function here
-  return beast[beast.length - 1] === dish[dish.length - 1];
+  return (
+    beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
+  );
 }
 
 console.log(feast("great blue heron", "garlic naan"));
