@@ -62,3 +62,30 @@ const sortByLength = (array) => {
 };
 
 // console.log(sortByLength(["Beg", "Life", "I", "To"]));
+
+/* Make a program that filters a list of strings and returns a list with only your friends name in it.
+
+If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours! Otherwise, you can be sure he's not... */
+
+const friends = (friends) => {
+  const result = [];
+  for (el of friends) {
+    if (el.length === 4) {
+      result.push(el);
+    }
+  }
+  return result;
+};
+
+// console.log(friends(["Love", "Your", "Face", "1"]));
+
+// sort number descending
+const descendingOrder = (n) => {
+  const arrInt = Array.from(String(n), (num) => Number(num))
+    .sort((a, b) => b - a)
+    .toString()
+    .replaceAll(",", "");
+  return Number(arrInt);
+};
+
+console.log(descendingOrder(12341));
