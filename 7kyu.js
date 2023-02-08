@@ -87,5 +87,41 @@ const descendingOrder = (n) => {
     .replaceAll(",", "");
   return Number(arrInt);
 };
+// console.log(descendingOrder(12341));
+// "ATTGC" --> "TAACG"
+// "GTAT" --> "CATA"
 
-console.log(descendingOrder(12341));
+function DNAStrand(dna) {
+  const arr = [];
+  for (let i = 0; i < dna.split("").length; i++) {
+    switch (dna[i]) {
+      case "A":
+        arr.push("T");
+        break;
+      case "T":
+        arr.push("A");
+        break;
+      case "G":
+        arr.push("C");
+        break;
+      case "C":
+        arr.push("G");
+        break;
+      default:
+        "";
+        break;
+    }
+  }
+  return arr.join("");
+}
+
+// console.log(DNAStrand("ATTGC"));
+
+// Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
+function sumTwoSmallestNumbers(numbers) {
+  //Code here
+  return numbers;
+}
+
+console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
