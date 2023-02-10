@@ -120,8 +120,9 @@ function DNAStrand(dna) {
 // Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
 
 function sumTwoSmallestNumbers(numbers) {
-  //Code here
-  return numbers;
+  const ascendSorting = numbers.sort((a, b) => a - b);
+
+  return ascendSorting[0] + ascendSorting[1];
 }
 
-console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
+console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22, 4, 1, 0]));
