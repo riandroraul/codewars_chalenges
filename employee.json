@@ -1,0 +1,48 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "John Smith",
+      "department": "Sales",
+      "salary": 50000,
+      "addresses": [
+        {
+          "type": "home",
+          "street": "123 Main St",
+          "city": "Anytown",
+          "state": "CA",
+          "zip": "12345"
+        },
+        {
+          "type": "work",
+          "street": "456 Market St",
+          "city": "Othertown",
+          "state": "CA",
+          "zip": "54321"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Jane Doe",
+      "department": "Marketing",
+      "salary": 60000,
+      "addresses": [
+        {
+          "type": "home",
+          "street": "789 Elm St",
+          "city": "Sometown",
+          "state": "CA",
+          "zip": "67890"
+        },
+        {
+          "type": "work",
+          "street": "123 Oak St",
+          "city": "Anothertown",
+          "state": "CA",
+          "zip": "98765"
+        }
+      ]
+    }
+  ]
+}
